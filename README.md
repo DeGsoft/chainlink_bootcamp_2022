@@ -7,11 +7,11 @@ Chainlink Bootcamp para Desarrolladores de Smart Contracts en Solidity
 En carpeta doc
 
 # Branches
-(Ejercicio bonus) [https://github.com/DeGsoft/chainlink_bootcamp_2022/tree/day1-e3-bonus]
+[Ejercicio bonus](https://github.com/DeGsoft/chainlink_bootcamp_2022/tree/day1-e3-bonus)
 
 # Links
-[Meetup] (https://www.meetup.com/chainlink-argentina-connected-smart-contracts/events/285656764/)
-[Dia1] (https://www.youtube.com/watch?v=GWrwb608IzM)
+[Meetup](https://www.meetup.com/chainlink-argentina-connected-smart-contracts/events/285656764/)
+[Dia1](https://www.youtube.com/watch?v=GWrwb608IzM)
 
 # Author
-[DeGsoft] (www.linkedin.com/in/diegoezequielguillen)
+[DeGsoft](https://www.linkedin.com/in/diegoezequielguillen)
