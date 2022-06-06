@@ -4,6 +4,15 @@ contract MyFirstContract {
 
    uint256 number;
    string[] names;
+   mapping (string => uint) public phoneNumbers;
+
+   function adMobileNumber(string memory _name, uint _mobileNumber) public {
+       phoneNumbers[_name] = _mobileNumber;
+   }
+
+   function getMobileNumber(string memory _name) public view returns (uint) {
+       return phoneNumbers[_name];
+   }
 
    function changeNumber(uint256 _num) public {
        number = _num;
