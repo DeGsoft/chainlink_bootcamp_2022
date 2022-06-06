@@ -1,4 +1,5 @@
 pragma solidity ^0.8.7;
+pragma experimental ABIEncoderV2;
 
 contract MyFirstContract {
 
@@ -12,11 +13,7 @@ contract MyFirstContract {
 
    function getMobileNumber(string memory _name) public view returns (uint) {
        return phoneNumbers[_name];
-   }
-
-   function changeNumber(uint256 _num) public {
-       number = _num;
-   }
+   }  
 
    function addName(string memory _name) public {
        names.push(_name);
@@ -25,6 +22,18 @@ contract MyFirstContract {
    function getName(uint _index) public view returns (string memory) {
        return names[_index];
    }
+
+   function getNames() public view returns (string[] memory) {
+       return names;
+   }    
+
+   function getNamesLength() public view returns (uint) {
+       return names.length;
+   }   
+
+   function changeNumber(uint256 _num) public {
+       number = _num;
+   }   
 
    function getNumber() public view returns (uint256) {
        return number;
