@@ -6,7 +6,7 @@ contract PriceConsumerV3 {
 
     constructor() public {
         priceFeed = AggregatorV3Interface(0xd8bD0a1cB028a31AA859A21A3758685a95dE4623);
-    }
+    }   
 
     function getLatestPrice() public view returns (int) {
         (
@@ -17,6 +17,17 @@ contract PriceConsumerV3 {
             uint80 answeredInRound            
         ) = priceFeed.latestRoundData();
         return price;
+    }
+
+    function getTimestamp() public view returns (uint) {
+        (
+            uint80 roundID,
+            int price,
+            uint startedAt,
+            uint timestamp,
+            uint80 answeredInRound            
+        ) = priceFeed.latestRoundData();
+        return timestamp;
     }
 
 }
